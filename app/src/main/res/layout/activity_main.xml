@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText untuk input angka pertama -->
+    <EditText
+        android:id="@+id/inputNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal"/>
+
+    <!-- EditText untuk input angka kedua -->
+    <EditText
+        android:id="@+id/inputNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal"/>
+
+    <!-- RadioGroup untuk pilihan operator -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <!-- RadioButton untuk penambahan -->
+        <RadioButton
+            android:id="@+id/radioAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <!-- RadioButton untuk pengurangan -->
+        <RadioButton
+            android:id="@+id/radioSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <!-- RadioButton untuk perkalian -->
+        <RadioButton
+            android:id="@+id/radioMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <!-- RadioButton untuk pembagian -->
+        <RadioButton
+            android:id="@+id/radioDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+    </RadioGroup>
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_gravity="center"/>
+</LinearLayout>
